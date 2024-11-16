@@ -1,7 +1,7 @@
 import streamlit as st
 
 # Set up the page
-st.set_page_config(page_title="Custom Dashboard with Styled Lists", layout="wide")
+st.set_page_config(page_title="Custom Dashboard", layout="wide")
 
 # CSS for styling
 st.markdown(
