@@ -16,22 +16,22 @@ st.markdown(
         <div style="display: flex; justify-content: space-around; margin-top: 20px;">
             <div style="border: 1px solid black; padding: 20px; width: 20%; background-color: #f9f9f9;">
                 <h3>Box 1</h3>
-                <hr style="border: 1px solid black;">
+                <hr style="border: 1px solid black; margin: 5px 0;">
                 <p style="font-size: 18px; margin-top: 20px;">100</p>
             </div>
             <div style="border: 1px solid black; padding: 20px; width: 20%; background-color: #f9f9f9;">
                 <h3>Box 2</h3>
-                <hr style="border: 1px solid black;">
+                <hr style="border: 1px solid black; margin: 5px 0;">
                 <p style="font-size: 18px; margin-top: 20px;">200</p>
             </div>
             <div style="border: 1px solid black; padding: 20px; width: 20%; background-color: #f9f9f9;">
                 <h3>Box 3</h3>
-                <hr style="border: 1px solid black;">
+                <hr style="border: 1px solid black; margin: 5px 0;">
                 <p style="font-size: 18px; margin-top: 20px;">300</p>
             </div>
             <div style="border: 1px solid black; padding: 20px; width: 20%; background-color: #f9f9f9;">
                 <h3>Box 4</h3>
-                <hr style="border: 1px solid black;">
+                <hr style="border: 1px solid black; margin: 5px 0;">
                 <p style="font-size: 18px; margin-top: 20px;">400</p>
             </div>
         </div>
