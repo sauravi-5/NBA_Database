@@ -11,7 +11,7 @@ st.markdown(
 # Add styled text with a boundary
 st.markdown(
     """
-    <div style="border: 2px solid black; padding: 10px; text-align: center; font-size: 20px;">
+    <div style="border: 2px solid white; padding: 10px; text-align: center; font-size: 20px;">
         Player and Game Statistics
     </div>
     """,
