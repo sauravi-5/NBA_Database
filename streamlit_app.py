@@ -12,7 +12,7 @@ st.markdown(
 st.markdown(
     """
     <div style="border: 2px solid white; padding: 10px; text-align: center; font-size: 20px;">
-        Player and Game Statistics
+        Player & Game Statistics
     </div>
     """,
     unsafe_allow_html=True,
