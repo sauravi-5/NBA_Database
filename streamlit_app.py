@@ -93,4 +93,6 @@ with st.container():
 
 # Custom Output Area
 st.markdown("## Output Area")
-st.markdown('<div class="output-area">', unsafe_allow_ht
+st.markdown('<div class="output-area">', unsafe_allow_html=True)
+st.write("This is where your output will be displayed.")
+st.markdown('</div>', unsafe_allow_html=True)
