@@ -1,7 +1,7 @@
 import streamlit as st
 
 # Set up the page
-st.set_page_config(page_title="Custom Dashboard", layout="wide")
+st.set_page_config(page_title="Custom Dashboard with Styled Lists", layout="wide")
 
 # CSS for styling
 st.markdown(
@@ -28,10 +28,25 @@ st.markdown(
         background-color: #3c4047;
         margin-top: 10px;
     }
-    .metric-box {
-        text-align: center;
-        margin-top: 10px;
-        margin-bottom: 20px;
+    ul.a {
+        list-style-type: circle;
+        padding-left: 20px;
+        margin-bottom: 10px;
+    }
+    ul.b {
+        list-style-type: square;
+        padding-left: 20px;
+        margin-bottom: 10px;
+    }
+    ol.c {
+        list-style-type: upper-roman;
+        padding-left: 20px;
+        margin-bottom: 10px;
+    }
+    ol.d {
+        list-style-type: lower-alpha;
+        padding-left: 20px;
+        margin-bottom: 10px;
     }
     </style>
     """,
@@ -39,7 +54,7 @@ st.markdown(
 )
 
 # Header
-st.title("📊 Custom Dashboard")
+st.title("📊 Custom Dashboard with Styled Lists")
 
 # Overview Section (Static Stats + Scrollable List)
 st.markdown('<div class="box">', unsafe_allow_html=True)
@@ -68,7 +83,7 @@ for col, start in zip(scrollable_row, [1, 11, 21]):
 
 st.markdown('</div>', unsafe_allow_html=True)
 
-# Filter Section
+# Filters Section
 st.markdown('<div class="box">', unsafe_allow_html=True)
 st.markdown("## Filters")
 col1, col2, col3, col4 = st.columns(4)
@@ -82,7 +97,65 @@ with col4:
     other_filter_2 = st.selectbox("Other Filter 2", ["Option A", "Option B", "Option C"])
 st.markdown('</div>', unsafe_allow_html=True)
 
-# Custom Output Area
+# Styled Lists Section
+st.markdown('<div class="box">', unsafe_allow_html=True)
+st.markdown("## Styled Lists")
+
+# Circle Bullets
+st.markdown("### List with Circle Bullets")
+st.markdown(
+    """
+    <ul class="a">
+        <li>Circle Item 1</li>
+        <li>Circle Item 2</li>
+        <li>Circle Item 3</li>
+    </ul>
+    """,
+    unsafe_allow_html=True,
+)
+
+# Square Bullets
+st.markdown("### List with Square Bullets")
+st.markdown(
+    """
+    <ul class="b">
+        <li>Square Item 1</li>
+        <li>Square Item 2</li>
+        <li>Square Item 3</li>
+    </ul>
+    """,
+    unsafe_allow_html=True,
+)
+
+# Ordered List with Upper Roman
+st.markdown("### Ordered List with Upper Roman Numbers")
+st.markdown(
+    """
+    <ol class="c">
+        <li>Upper Roman Item I</li>
+        <li>Upper Roman Item II</li>
+        <li>Upper Roman Item III</li>
+    </ol>
+    """,
+    unsafe_allow_html=True,
+)
+
+# Ordered List with Lower Alpha
+st.markdown("### Ordered List with Lower Alpha")
+st.markdown(
+    """
+    <ol class="d">
+        <li>Lower Alpha Item a</li>
+        <li>Lower Alpha Item b</li>
+        <li>Lower Alpha Item c</li>
+    </ol>
+    """,
+    unsafe_allow_html=True,
+)
+
+st.markdown('</div>', unsafe_allow_html=True)
+
+# Output Section
 st.markdown('<div class="box">', unsafe_allow_html=True)
 st.markdown("## Output Area")
 st.write("🔍 This is where your output will be displayed.")
