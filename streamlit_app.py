@@ -36,7 +36,7 @@ st.markdown(
             </div>
         </div>
 
-        <!-- New Row with 3 Boxes --!>
+        <!-- New Row with 3 Boxes -->
         <div style="display: flex; justify-content: space-around; margin-top: 40px;">
             <div style="border: 2px solid black; padding: 20px; width: 25%; background-color: #e9e9e9; text-align: center; height: 150px;">
                 <h3 style="margin-bottom: 10px; color: black; font-size: 16px;">Box 1</h3>
@@ -61,10 +61,10 @@ st.markdown(
     """
     <div style="margin-top: 40px;">
         <h3 style="text-align: center;">Filter Data</h3>
-        <div style="display: flex; justify-content: space-around;">
+        <div style="display: flex; justify-content: space-between;">
 
             <!-- Dropdown 1: Select Team -->
-            <div style="width: 30%; padding: 10px; text-align: center;">
+            <div style="width: 23%; padding: 10px; text-align: center;">
                 <h4>Select Team</h4>
                 <hr style="border: 1px solid black; margin-top: 5px;">
     """,
@@ -79,8 +79,8 @@ st.markdown(
     <p style="font-size: 20px; color: black;">Selected: {team}</p>
     </div>
 
-    <!-- Dropdown 2: Select Player --!>
-    <div style="width: 30%; padding: 10px; text-align: center;">
+    <!-- Dropdown 2: Select Player -->
+    <div style="width: 23%; padding: 10px; text-align: center;">
         <h4>Select Player</h4>
         <hr style="border: 1px solid black; margin-top: 5px;">
         """,
@@ -96,7 +96,7 @@ st.markdown(
     </div>
 
     <!-- Dropdown 3: Select Season -->
-    <div style="width: 30%; padding: 10px; text-align: center;">
+    <div style="width: 23%; padding: 10px; text-align: center;">
         <h4>Select Season</h4>
         <hr style="border: 1px solid black; margin-top: 5px;">
         """,
@@ -109,6 +109,22 @@ season = st.selectbox("Select Season", season_options)
 st.markdown(
     f"""
     <p style="font-size: 20px; color: black;">Selected: {season}</p>
+    </div>
+
+    <!-- Dropdown 4: Select Match -->
+    <div style="width: 23%; padding: 10px; text-align: center;">
+        <h4>Select Match</h4>
+        <hr style="border: 1px solid black; margin-top: 5px;">
+        """,
+    unsafe_allow_html=True,
+)
+
+match_options = ["Match 1", "Match 2", "Match 3", "Match 4"]
+match = st.selectbox("Select Match", match_options)
+
+st.markdown(
+    f"""
+    <p style="font-size: 20px; color: black;">Selected: {match}</p>
     </div>
     </div>
     </div>
