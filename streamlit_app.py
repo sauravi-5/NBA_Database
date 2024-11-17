@@ -35,7 +35,7 @@ st.markdown(
                 <p style="font-size: 30px; color: black; text-align: center;">400</p>
             </div>
         </div>
-        
+
         <!-- Scrollable Boxes -->
         <div style="margin-top: 40px; text-align: left;">
             <h3>List 1</h3>
