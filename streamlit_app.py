@@ -36,7 +36,7 @@ st.markdown(
             </div>
         </div>
 
-        <!-- New Row with 3 Boxes -->
+        <!-- New Row with 3 Boxes --!>
         <div style="display: flex; justify-content: space-around; margin-top: 40px;">
             <div style="border: 2px solid black; padding: 20px; width: 25%; background-color: #e9e9e9; text-align: center; height: 150px;">
                 <h3 style="margin-bottom: 10px; color: black; font-size: 16px;">Box 1</h3>
@@ -79,7 +79,7 @@ st.markdown(
     <p style="font-size: 20px; color: black;">Selected: {team}</p>
     </div>
 
-    <!-- Dropdown 2: Select Player -->
+    <!-- Dropdown 2: Select Player --!>
     <div style="width: 30%; padding: 10px; text-align: center;">
         <h4>Select Player</h4>
         <hr style="border: 1px solid black; margin-top: 5px;">
