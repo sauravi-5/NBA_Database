@@ -56,7 +56,7 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-# Add filters outside the boundary for selecting options
+# Add filters outside the boundary for selecting options (all in one row)
 st.markdown(
     """
     <div style="margin-top: 40px;">
@@ -64,10 +64,10 @@ st.markdown(
         <div style="display: flex; justify-content: space-around;">
 
             <!-- Dropdown 1: Select Team -->
-            <div style="width: 25%; padding: 10px; text-align: center;">
+            <div style="width: 30%; padding: 10px; text-align: center;">
                 <h4>Select Team</h4>
                 <hr style="border: 1px solid black; margin-top: 5px;">
-                """,
+    """,
     unsafe_allow_html=True,
 )
 
@@ -80,7 +80,7 @@ st.markdown(
     </div>
 
     <!-- Dropdown 2: Select Player -->
-    <div style="width: 25%; padding: 10px; text-align: center;">
+    <div style="width: 30%; padding: 10px; text-align: center;">
         <h4>Select Player</h4>
         <hr style="border: 1px solid black; margin-top: 5px;">
         """,
@@ -96,7 +96,7 @@ st.markdown(
     </div>
 
     <!-- Dropdown 3: Select Season -->
-    <div style="width: 25%; padding: 10px; text-align: center;">
+    <div style="width: 30%; padding: 10px; text-align: center;">
         <h4>Select Season</h4>
         <hr style="border: 1px solid black; margin-top: 5px;">
         """,
