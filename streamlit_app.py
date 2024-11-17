@@ -36,6 +36,25 @@ st.markdown(
             </div>
         </div>
 
+        <!-- Add another row of 3 stats -->
+        <div style="display: flex; justify-content: space-around; margin-top: 20px;">
+            <div style="border: 1px solid black; padding: 10px 20px; width: 20%; background-color: #f9f9f9; text-align: center;">
+                <h3 style="margin-bottom: 0; color: black; font-size: 16px; text-align: center;">Stat 5</h3>
+                <hr style="border: 1px solid black; margin-top: 5px; margin-bottom: 10px;">
+                <p style="font-size: 30px; color: black; text-align: center;">500</p>
+            </div>
+            <div style="border: 1px solid black; padding: 10px 20px; width: 20%; background-color: #f9f9f9; text-align: center;">
+                <h3 style="margin-bottom: 0; color: black; font-size: 16px; text-align: center;">Stat 6</h3>
+                <hr style="border: 1px solid black; margin-top: 5px; margin-bottom: 10px;">
+                <p style="font-size: 30px; color: black; text-align: center;">600</p>
+            </div>
+            <div style="border: 1px solid black; padding: 10px 20px; width: 20%; background-color: #f9f9f9; text-align: center;">
+                <h3 style="margin-bottom: 0; color: black; font-size: 16px; text-align: center;">Stat 7</h3>
+                <hr style="border: 1px solid black; margin-top: 5px; margin-bottom: 10px;">
+                <p style="font-size: 30px; color: black; text-align: center;">700</p>
+            </div>
+        </div>
+
     </div>
     """,
     unsafe_allow_html=True,
@@ -73,6 +92,7 @@ with col3:
 with col4:
     match_options = ["Match 1", "Match 2", "Match 3", "Match 4"]
     match = st.selectbox("Select Match", ["Select One"] + match_options, index=0)
+
 # Display the "Desired Output" heading
 st.markdown(
     """
@@ -92,5 +112,3 @@ st.markdown(
     """,
     unsafe_allow_html=True,
 )
-
-incorporate the code in this
