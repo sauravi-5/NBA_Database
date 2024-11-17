@@ -36,10 +36,11 @@ st.markdown(
             </div>
         </div>
 
+        <!-- Add boxes with scrollable lists -->
         <div style="display: flex; justify-content: space-around; margin-top: 30px;">
             <div style="border: 1px solid black; padding: 10px 20px; width: 20%; height: 250px; background-color: #f9f9f9; text-align: center; overflow-y: scroll;">
                 <h4 style="margin-bottom: 10px; color: black; font-size: 18px;">Box 1: List of Players</h4>
-                <ul style="list-style-type: none; padding-left: 0;">
+                <ul style="list-style-type: none; padding-left: 0; overflow-y: scroll; max-height: 200px;">
                     <li>LeBron James</li>
                     <li>Stephen Curry</li>
                     <li>Kawhi Leonard</li>
@@ -51,11 +52,15 @@ st.markdown(
                     <li>Luka Dončić</li>
                     <li>Jayson Tatum</li>
                     <li>Zion Williamson</li>
+                    <li>Jimmy Butler</li>
+                    <li>Damian Lillard</li>
+                    <li>Chris Paul</li>
+                    <li>Trae Young</li>
                 </ul>
             </div>
             <div style="border: 1px solid black; padding: 10px 20px; width: 20%; height: 250px; background-color: #f9f9f9; text-align: center; overflow-y: scroll;">
                 <h4 style="margin-bottom: 10px; color: black; font-size: 18px;">Box 2: Top Games</h4>
-                <ul style="list-style-type: none; padding-left: 0;">
+                <ul style="list-style-type: none; padding-left: 0; overflow-y: scroll; max-height: 200px;">
                     <li>Game 1: Lakers vs Warriors</li>
                     <li>Game 2: Clippers vs Bucks</li>
                     <li>Game 3: Celtics vs Heat</li>
@@ -63,11 +68,14 @@ st.markdown(
                     <li>Game 5: Raptors vs Sixers</li>
                     <li>Game 6: Mavs vs Jazz</li>
                     <li>Game 7: Hornets vs Pacers</li>
+                    <li>Game 8: Knicks vs Bulls</li>
+                    <li>Game 9: Hawks vs Magic</li>
+                    <li>Game 10: Pelicans vs Timberwolves</li>
                 </ul>
             </div>
             <div style="border: 1px solid black; padding: 10px 20px; width: 20%; height: 250px; background-color: #f9f9f9; text-align: center; overflow-y: scroll;">
                 <h4 style="margin-bottom: 10px; color: black; font-size: 18px;">Box 3: Team Achievements</h4>
-                <ul style="list-style-type: none; padding-left: 0;">
+                <ul style="list-style-type: none; padding-left: 0; overflow-y: scroll; max-height: 200px;">
                     <li>2016: Cavaliers Championship</li>
                     <li>2015: Warriors Championship</li>
                     <li>2020: Lakers Championship</li>
@@ -75,6 +83,9 @@ st.markdown(
                     <li>2012: Heat Championship</li>
                     <li>2008: Celtics Championship</li>
                     <li>2019: Raptors Championship</li>
+                    <li>2004: Pistons Championship</li>
+                    <li>1994: Rockets Championship</li>
+                    <li>1989: Pistons Championship</li>
                 </ul>
             </div>
         </div>
