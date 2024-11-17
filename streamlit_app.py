@@ -57,23 +57,23 @@ col1, col2, col3, col4 = st.columns(4)
 
 # Dropdown 1: Select Team
 with col1:
-    team_options = ["Select One"] + ["Team A", "Team B", "Team C", "Team D"]
-    team = st.selectbox("Select Team", team_options)
+    team_options = ["Team A", "Team B", "Team C", "Team D"]
+    team = st.selectbox("Select Team", ["Select One"] + team_options, index=0)
 
 # Dropdown 2: Select Player
 with col2:
-    player_options = ["Select One"] + ["Player 1", "Player 2", "Player 3", "Player 4"]
-    player = st.selectbox("Select Player", player_options)
+    player_options = ["Player 1", "Player 2", "Player 3", "Player 4"]
+    player = st.selectbox("Select Player", ["Select One"] + player_options, index=0)
 
 # Dropdown 3: Select Season
 with col3:
-    season_options = ["Select One"] + ["2020-2021", "2021-2022", "2022-2023"]
-    season = st.selectbox("Select Season", season_options)
+    season_options = ["2020-2021", "2021-2022", "2022-2023"]
+    season = st.selectbox("Select Season", ["Select One"] + season_options, index=0)
 
 # Dropdown 4: Select Match
 with col4:
-    match_options = ["Select One"] + ["Match 1", "Match 2", "Match 3", "Match 4"]
-    match = st.selectbox("Select Match", match_options)
+    match_options = ["Match 1", "Match 2", "Match 3", "Match 4"]
+    match = st.selectbox("Select Match", ["Select One"] + match_options, index=0)
 
 # Display the "Desired Output" heading
 st.markdown(
