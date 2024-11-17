@@ -34,7 +34,6 @@ st.markdown(
                 <hr style="border: 1px solid black; margin-top: 5px; margin-bottom: 10px;">
                 <p style="font-size: 30px; color: black; text-align: center;">400</p>
             </div>
-        </div>
 
         <!-- Add another row of 3 stats -->
         <div style="display: flex; justify-content: space-around; margin-top: 20px;">
