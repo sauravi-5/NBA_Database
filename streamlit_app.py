@@ -88,8 +88,8 @@ st.markdown(
 # Add a large empty box for the desired output
 st.markdown(
     """
-    <div style="width: 100%; height: 300px; border: 2px solid black; margin-top: 20px; text-align: center; display: flex; align-items: center; justify-content: center; background-color: white;">
-        <p style="color: black; font-size: 18px;">Select the filters above to display the desired output here. The results will be shown based on your selections from the dropdowns.</p>
+    <div style="width: 100%; height: 300px; border: 2px solid grey; margin-top: 20px; text-align: center; display: flex; align-items: center; justify-content: center; background-color: white;">
+        <p style="color: black; font-size: 18px;">Select the filters above to display the desired output here.</p>
     </div>
     """,
     unsafe_allow_html=True,
