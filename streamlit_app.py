@@ -35,7 +35,6 @@ st.markdown(
                 <p style="font-size: 30px; color: black; text-align: center;">400</p>
             </div>
         </div>
-        </div>
 
         <!-- Add another row of 3 stats -->
         <div style="display: flex; justify-content: space-around; margin-top: 20px;">
