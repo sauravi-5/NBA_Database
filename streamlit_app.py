@@ -51,75 +51,28 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-
 # Add 4 dropdowns in a row
 col1, col2, col3, col4 = st.columns(4)
 
 # Dropdown 1: Select Team
 with col1:
     team_options = ["Team A", "Team B", "Team C", "Team D"]
-    team = st.selectbox(
-        "Select Team",
-        ["Select One"] + team_options,  # Add 'Select One' as the first option
-        index=0,
-        help="Select a team"
-    )
+    team = st.selectbox("Select Team", ["Select One"] + team_options, index=0)
 
 # Dropdown 2: Select Player
 with col2:
     player_options = ["Player 1", "Player 2", "Player 3", "Player 4"]
-    player = st.selectbox(
-        "Select Player",
-        ["Select One"] + player_options,
-        index=0,
-        help="Select a player"
-    )
+    player = st.selectbox("Select Player", ["Select One"] + player_options, index=0)
 
 # Dropdown 3: Select Season
 with col3:
     season_options = ["2020-2021", "2021-2022", "2022-2023"]
-    season = st.selectbox(
-        "Select Season",
-        ["Select One"] + season_options,
-        index=0,
-        help="Select a season"
-    )
+    season = st.selectbox("Select Season", ["Select One"] + season_options, index=0)
 
 # Dropdown 4: Select Match
 with col4:
     match_options = ["Match 1", "Match 2", "Match 3", "Match 4"]
-    match = st.selectbox(
-        "Select Match",
-        ["Select One"] + match_options,
-        index=0,
-        help="Select a match"
-    )
-
-# After the user selects, update the options
-if team != "Select One":
-    team_options = [team] + team_options[1:]
-
-if player != "Select One":
-    player_options = [player] + player_options[1:]
-
-if season != "Select One":
-    season_options = [season] + season_options[1:]
-
-if match != "Select One":
-    match_options = [match] + match_options[1:]
-
-# Update the dropdown options once a selection has been made
-with col1:
-    team = st.selectbox("Select Team", team_options, index=0)
-
-with col2:
-    player = st.selectbox("Select Player", player_options, index=0)
-
-with col3:
-    season = st.selectbox("Select Season", season_options, index=0)
-
-with col4:
-    match = st.selectbox("Select Match", match_options, index=0)
+    match = st.selectbox("Select Match", ["Select One"] + match_options, index=0)
 # Display the "Desired Output" heading
 st.markdown(
     """
