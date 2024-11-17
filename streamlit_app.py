@@ -8,12 +8,12 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-# Add Player and Game Statistics with a white boundary and boxes, making it full width
+# Add Player and Game Statistics with a white boundary and boxes
 st.markdown(
     """
-    <div style="border: 2px solid white; padding: 20px; text-align: center; font-size: 20px; width: 100%; box-sizing: border-box;">
+    <div style="border: 2px solid white; padding: 20px; text-align: center; font-size: 20px;">
         <h2>Player and Game Statistics</h2>
-        <div style="display: flex; justify-content: space-around; margin-top: 20px; width: 100%; box-sizing: border-box;">
+        <div style="display: flex; justify-content: space-around; margin-top: 20px;">
             <div style="border: 1px solid black; padding: 10px 20px; width: 20%; background-color: #f9f9f9; text-align: center;">
                 <h3 style="margin-bottom: 0; color: black; font-size: 16px; text-align: center;">Stat 1</h3>
                 <hr style="border: 1px solid black; margin-top: 5px; margin-bottom: 10px;">
@@ -35,6 +35,7 @@ st.markdown(
                 <p style="font-size: 30px; color: black; text-align: center;">400</p>
             </div>
         </div>
+
     </div>
     """,
     unsafe_allow_html=True,
@@ -72,7 +73,6 @@ with col3:
 with col4:
     match_options = ["Match 1", "Match 2", "Match 3", "Match 4"]
     match = st.selectbox("Select Match", ["Select One"] + match_options, index=0)
-
 # Display the "Desired Output" heading
 st.markdown(
     """
@@ -92,3 +92,5 @@ st.markdown(
     """,
     unsafe_allow_html=True,
 )
+
+incorporate the code in this
