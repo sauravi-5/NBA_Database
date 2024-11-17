@@ -8,11 +8,11 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-# Add styled text with a white boundary and row of four boxes
+# Add Player and Game Statistics with a white boundary and boxes
 st.markdown(
     """
     <div style="border: 2px solid white; padding: 20px; text-align: center; font-size: 20px;">
-        Player and Game Statistics
+        <h2>Player and Game Statistics</h2>
         <div style="display: flex; justify-content: space-around; margin-top: 20px;">
             <div style="border: 1px solid black; padding: 10px 20px; width: 20%; background-color: #f9f9f9; text-align: center;">
                 <h3 style="margin-bottom: 0; color: black; font-size: 16px; text-align: center;">Stat 1</h3>
