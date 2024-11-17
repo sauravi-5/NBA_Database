@@ -8,7 +8,7 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-# Add styled text with a white boundary and row of four boxes for stats
+# Add styled text with a white boundary and row of four boxes
 st.markdown(
     """
     <div style="border: 2px solid white; padding: 20px; text-align: center; font-size: 20px;">
@@ -36,41 +36,47 @@ st.markdown(
             </div>
         </div>
 
-        <!-- Scrollable Boxes -->
-        <div style="margin-top: 40px; text-align: left;">
-            <h3>List 1</h3>
-            <div style="border: 1px solid black; width: 90%; max-height: 150px; overflow-y: scroll; padding: 10px; margin-bottom: 20px;">
-                <p>Item 1</p>
-                <p>Item 2</p>
-                <p>Item 3</p>
-                <p>Item 4</p>
-                <p>Item 5</p>
-                <p>Item 6</p>
-                <p>Item 7</p>
-                <p>Item 8</p>
-                <p>Item 9</p>
+        <!-- Add boxes with scrollable lists -->
+        <div style="display: flex; justify-content: space-around; margin-top: 30px;">
+            <div style="border: 1px solid black; padding: 10px 20px; width: 20%; height: 250px; background-color: #f9f9f9; text-align: center; overflow-y: scroll;">
+                <h4 style="margin-bottom: 10px; color: black; font-size: 18px;">Box 1: List of Players</h4>
+                <ul style="list-style-type: none; padding-left: 0;">
+                    <li>LeBron James</li>
+                    <li>Stephen Curry</li>
+                    <li>Kawhi Leonard</li>
+                    <li>Kevin Durant</li>
+                    <li>Giannis Antetokounmpo</li>
+                    <li>James Harden</li>
+                    <li>Joel Embiid</li>
+                    <li>Anthony Davis</li>
+                    <li>Luka Dončić</li>
+                    <li>Jayson Tatum</li>
+                    <li>Zion Williamson</li>
+                </ul>
             </div>
-            <h3>List 2</h3>
-            <div style="border: 1px solid black; width: 90%; max-height: 150px; overflow-y: scroll; padding: 10px; margin-bottom: 20px;">
-                <p>Item A</p>
-                <p>Item B</p>
-                <p>Item C</p>
-                <p>Item D</p>
-                <p>Item E</p>
-                <p>Item F</p>
-                <p>Item G</p>
-                <p>Item H</p>
+            <div style="border: 1px solid black; padding: 10px 20px; width: 20%; height: 250px; background-color: #f9f9f9; text-align: center; overflow-y: scroll;">
+                <h4 style="margin-bottom: 10px; color: black; font-size: 18px;">Box 2: Top Games</h4>
+                <ul style="list-style-type: none; padding-left: 0;">
+                    <li>Game 1: Lakers vs Warriors</li>
+                    <li>Game 2: Clippers vs Bucks</li>
+                    <li>Game 3: Celtics vs Heat</li>
+                    <li>Game 4: Suns vs Nuggets</li>
+                    <li>Game 5: Raptors vs Sixers</li>
+                    <li>Game 6: Mavs vs Jazz</li>
+                    <li>Game 7: Hornets vs Pacers</li>
+                </ul>
             </div>
-            <h3>List 3</h3>
-            <div style="border: 1px solid black; width: 90%; max-height: 150px; overflow-y: scroll; padding: 10px;">
-                <p>Record 1</p>
-                <p>Record 2</p>
-                <p>Record 3</p>
-                <p>Record 4</p>
-                <p>Record 5</p>
-                <p>Record 6</p>
-                <p>Record 7</p>
-                <p>Record 8</p>
+            <div style="border: 1px solid black; padding: 10px 20px; width: 20%; height: 250px; background-color: #f9f9f9; text-align: center; overflow-y: scroll;">
+                <h4 style="margin-bottom: 10px; color: black; font-size: 18px;">Box 3: Team Achievements</h4>
+                <ul style="list-style-type: none; padding-left: 0;">
+                    <li>2016: Cavaliers Championship</li>
+                    <li>2015: Warriors Championship</li>
+                    <li>2020: Lakers Championship</li>
+                    <li>1996: Bulls Championship</li>
+                    <li>2012: Heat Championship</li>
+                    <li>2008: Celtics Championship</li>
+                    <li>2019: Raptors Championship</li>
+                </ul>
             </div>
         </div>
     </div>
