@@ -59,69 +59,21 @@ col1, col2, col3, col4 = st.columns(4)
 with col1:
     team_options = ["Select One"] + ["Team A", "Team B", "Team C", "Team D"]
     team = st.selectbox("Select Team", team_options)
-    
-    # Center-align the dropdown options using custom CSS
-    st.markdown(
-        """
-        <style>
-            div.stSelectbox > div > div > div > div {
-                text-align: center;
-            }
-        </style>
-        """,
-        unsafe_allow_html=True,
-    )
 
 # Dropdown 2: Select Player
 with col2:
     player_options = ["Select One"] + ["Player 1", "Player 2", "Player 3", "Player 4"]
     player = st.selectbox("Select Player", player_options)
 
-    # Center-align the dropdown options using custom CSS
-    st.markdown(
-        """
-        <style>
-            div.stSelectbox > div > div > div > div {
-                text-align: center;
-            }
-        </style>
-        """,
-        unsafe_allow_html=True,
-    )
-
 # Dropdown 3: Select Season
 with col3:
     season_options = ["Select One"] + ["2020-2021", "2021-2022", "2022-2023"]
     season = st.selectbox("Select Season", season_options)
 
-    # Center-align the dropdown options using custom CSS
-    st.markdown(
-        """
-        <style>
-            div.stSelectbox > div > div > div > div {
-                text-align: center;
-            }
-        </style>
-        """,
-        unsafe_allow_html=True,
-    )
-
 # Dropdown 4: Select Match
 with col4:
     match_options = ["Select One"] + ["Match 1", "Match 2", "Match 3", "Match 4"]
     match = st.selectbox("Select Match", match_options)
-
-    # Center-align the dropdown options using custom CSS
-    st.markdown(
-        """
-        <style>
-            div.stSelectbox > div > div > div > div {
-                text-align: center;
-            }
-        </style>
-        """,
-        unsafe_allow_html=True,
-    )
 
 # Display the "Desired Output" heading
 st.markdown(
