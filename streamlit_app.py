@@ -36,7 +36,6 @@ st.markdown(
             </div>
         </div>
 
-        <!-- Add boxes with scrollable lists -->
         <div style="display: flex; justify-content: space-around; margin-top: 30px;">
             <div style="border: 1px solid black; padding: 10px 20px; width: 20%; height: 250px; background-color: #f9f9f9; text-align: center; overflow-y: scroll;">
                 <h4 style="margin-bottom: 10px; color: black; font-size: 18px;">Box 1: List of Players</h4>
