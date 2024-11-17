@@ -36,6 +36,7 @@ st.markdown(
             </div>
         </div>
 
+        <!-- New Row with 3 Boxes -->
         <div style="display: flex; justify-content: space-around; margin-top: 40px;">
             <div style="border: 2px solid black; padding: 20px; width: 25%; background-color: #e9e9e9; text-align: center; height: 150px;">
                 <h3 style="margin-bottom: 10px; color: black; font-size: 16px;">Box 1</h3>
