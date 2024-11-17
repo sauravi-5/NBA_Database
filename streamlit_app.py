@@ -63,11 +63,11 @@ st.markdown(
         <h3 style="text-align: center;">Filter Data</h3>
         <div style="display: flex; justify-content: space-around;">
 
-            <!-- Dropdown 1: Select Team -->
-            <div style="width: 23%; padding: 10px; text-align: center;">
-                <h4>Select Team</h4>
-                <hr style="border: 1px solid black; margin-top: 5px;">
-                """,
+        <!-- Dropdown 1: Select Team -->
+        <div style="width: 23%; padding: 10px; text-align: center;">
+        <h4>Select Team</h4>
+        <hr style="border: 1px solid black; margin-top: 5px;">
+        """,
     unsafe_allow_html=True,
 )
 
