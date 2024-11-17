@@ -8,34 +8,33 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-# Add Player and Game Statistics with a white boundary and boxes
+# Add Player and Game Statistics with a white boundary and boxes, making it full screen
 st.markdown(
     """
-    <div style="border: 2px solid white; padding: 20px; text-align: center; font-size: 20px;">
+    <div style="border: 2px solid white; padding: 20px; text-align: center; font-size: 20px; width: 100%; height: 100vh; box-sizing: border-box;">
         <h2>Player and Game Statistics</h2>
-        <div style="display: flex; justify-content: space-around; margin-top: 20px;">
-            <div style="border: 1px solid black; padding: 10px 20px; width: 20%; background-color: #f9f9f9; text-align: center;">
+        <div style="display: flex; justify-content: space-around; margin-top: 20px; width: 100%; height: 100%; box-sizing: border-box;">
+            <div style="border: 1px solid black; padding: 10px 20px; width: 20%; background-color: #f9f9f9; text-align: center; height: 100%;">
                 <h3 style="margin-bottom: 0; color: black; font-size: 16px; text-align: center;">Stat 1</h3>
                 <hr style="border: 1px solid black; margin-top: 5px; margin-bottom: 10px;">
                 <p style="font-size: 30px; color: black; text-align: center;">100</p>
             </div>
-            <div style="border: 1px solid black; padding: 10px 20px; width: 20%; background-color: #f9f9f9; text-align: center;">
+            <div style="border: 1px solid black; padding: 10px 20px; width: 20%; background-color: #f9f9f9; text-align: center; height: 100%;">
                 <h3 style="margin-bottom: 0; color: black; font-size: 16px; text-align: center;">Stat 2</h3>
                 <hr style="border: 1px solid black; margin-top: 5px; margin-bottom: 10px;">
                 <p style="font-size: 30px; color: black; text-align: center;">200</p>
             </div>
-            <div style="border: 1px solid black; padding: 10px 20px; width: 20%; background-color: #f9f9f9; text-align: center;">
+            <div style="border: 1px solid black; padding: 10px 20px; width: 20%; background-color: #f9f9f9; text-align: center; height: 100%;">
                 <h3 style="margin-bottom: 0; color: black; font-size: 16px; text-align: center;">Stat 3</h3>
                 <hr style="border: 1px solid black; margin-top: 5px; margin-bottom: 10px;">
                 <p style="font-size: 30px; color: black; text-align: center;">300</p>
             </div>
-            <div style="border: 1px solid black; padding: 10px 20px; width: 20%; background-color: #f9f9f9; text-align: center;">
+            <div style="border: 1px solid black; padding: 10px 20px; width: 20%; background-color: #f9f9f9; text-align: center; height: 100%;">
                 <h3 style="margin-bottom: 0; color: black; font-size: 16px; text-align: center;">Stat 4</h3>
                 <hr style="border: 1px solid black; margin-top: 5px; margin-bottom: 10px;">
                 <p style="font-size: 30px; color: black; text-align: center;">400</p>
             </div>
         </div>
-
     </div>
     """,
     unsafe_allow_html=True,
@@ -73,6 +72,7 @@ with col3:
 with col4:
     match_options = ["Match 1", "Match 2", "Match 3", "Match 4"]
     match = st.selectbox("Select Match", ["Select One"] + match_options, index=0)
+
 # Display the "Desired Output" heading
 st.markdown(
     """
