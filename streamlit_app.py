@@ -60,11 +60,11 @@ selected_table = st.selectbox("Select Table", options=table_options)
 # Display scrollable feature dynamically based on selected table
 st.markdown(
     f"""
-    <div style="border: 1px solid black; padding: 10px 20px; width: 90%; margin: 20px auto; background-color: #f9f9f9; text-align: center;">
-        <div style="max-height: 150px; overflow-y: auto; text-align: left;">
-            {"".join([f"<p style='color: black;'>{detail}</p>" for detail in scrollable_details[selected_table]])}
-        </div>
+<div style="border: 1px solid black; padding: 10px 20px; width: 90%; margin: 20px auto; background-color: #f9f9f9; text-align: center;">
+    <div style="max-height: 150px; overflow-y: auto; text-align: left;">
+        {"".join([f"<p style='color: black;'>{detail}</p>" for detail in scrollable_details[selected_table]])}
     </div>
+</div>
     """,
     unsafe_allow_html=True,
 )
