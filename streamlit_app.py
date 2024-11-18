@@ -8,8 +8,6 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-import streamlit as st
-
 # Simulated data for player and game statistics
 statistics = {
     "Stat 1": 100,
@@ -36,7 +34,7 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-# Display statistics dynamically
+# Display statistics dynamically in a horizontal layout
 st.markdown(
     """
     <div style="display: flex; justify-content: space-around; margin-top: 20px;">
@@ -44,36 +42,33 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
+stat_boxes = ""
 for stat_name, stat_value in statistics.items():
-    st.markdown(
-        f"""
-        <div style="border: 1px solid black; padding: 10px 20px; width: 20%; background-color: #f9f9f9; text-align: center;">
-            <h3 style="margin-bottom: 0; color: black; font-size: 16px; text-align: center;">{stat_name}</h3>
-            <hr style="border: 1px solid black; margin-top: 5px; margin-bottom: 10px;">
-            <p style="font-size: 30px; color: black; text-align: center;">{stat_value}</p>
-        </div>
-        """,
-        unsafe_allow_html=True,
-    )
+    stat_boxes += f"""
+    <div style="border: 1px solid black; padding: 10px 20px; width: 20%; background-color: #f9f9f9; text-align: center;">
+        <h3 style="margin-bottom: 0; color: black; font-size: 16px; text-align: center;">{stat_name}</h3>
+        <hr style="border: 1px solid black; margin-top: 5px; margin-bottom: 10px;">
+        <p style="font-size: 30px; color: black; text-align: center;">{stat_value}</p>
+    </div>
+    """
 
-st.markdown("</div>", unsafe_allow_html=True)
+st.markdown(f"<div style='display: flex; justify-content: space-evenly;'>{stat_boxes}</div>", unsafe_allow_html=True)
 
 # Dropdown filter for selecting a table
 selected_table = st.selectbox("Select Table", options=table_options)
 
 # Display scrollable feature dynamically based on selected table
 st.markdown(
-    """
+    f"""
     <div style="border: 1px solid black; padding: 10px 20px; width: 90%; margin: 20px auto; background-color: #f9f9f9; text-align: center;">
         <div style="max-height: 150px; overflow-y: auto; text-align: left;">
+            {"".join([f"<p style='color: black;'>{detail}</p>" for detail in scrollable_details[selected_table]])}
+        </div>
+    </div>
     """,
     unsafe_allow_html=True,
 )
 
-for detail in scrollable_details[selected_table]:
-    st.markdown(f"<p style='color: black;'>{detail}</p>", unsafe_allow_html=True)
-
-st.markdown("</div></div>", unsafe_allow_html=True)
 # Display the "Filter Data" heading
 st.markdown(
     """
