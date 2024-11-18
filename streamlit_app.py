@@ -36,35 +36,51 @@ st.markdown(
             </div>
         </div>
 
-    <!-- Add another row of 3 stats -->
+    <!-- Add another row of stats with a vertical list -->
     <div style="display: flex; justify-content: space-around; margin-top: 20px;">
-        <div style="border: 1px solid black; padding: 10px 20px; width: 20%; background-color: #f9f9f9; text-align: center; overflow-y: auto; max-height: 150px;">
+        <div style="border: 1px solid black; padding: 10px 20px; width: 20%; background-color: #f9f9f9; text-align: center;">
             <h3 style="margin-bottom: 0; color: black; font-size: 16px; text-align: center;">Stat 5</h3>
             <hr style="border: 1px solid black; margin-top: 5px; margin-bottom: 10px;">
-            <ul style="list-style-type: none; padding: 0; margin: 0; color: black; text-align: left;">
-                <li style="color: black;">Item 1</li>
-                <li style="color: black;">Item 2</li>
-                <li style="color: black;">Item 3</li>
-                <li style="color: black;">Item 4</li>
-                <li style="color: black;">Item 5</li>
-                <li style="color: black;">Item 6</li>
-                <li style="color: black;">Item 7</li>
-                <li style="color: black;">Item 8</li>
-                <li style="color: black;">Item 9</li>
-                <li style="color: black;">Item 10</li>
-            </ul>
+            <div style="max-height: 150px; overflow-y: auto; text-align: left;">
+                <ul style="padding-left: 15px;">
+                    <li>Detail 1</li>
+                    <li>Detail 2</li>
+                    <li>Detail 3</li>
+                    <li>Detail 4</li>
+                    <li>Detail 5</li>
+                    <li>Detail 6</li>
+                </ul>
+            </div>
         </div>
         <div style="border: 1px solid black; padding: 10px 20px; width: 20%; background-color: #f9f9f9; text-align: center;">
             <h3 style="margin-bottom: 0; color: black; font-size: 16px; text-align: center;">Stat 6</h3>
             <hr style="border: 1px solid black; margin-top: 5px; margin-bottom: 10px;">
-            <p style="font-size: 30px; color: black; text-align: center;">600</p>
+            <div style="max-height: 150px; overflow-y: auto; text-align: left;">
+                <ul style="padding-left: 15px;">
+                    <li>Detail A</li>
+                    <li>Detail B</li>
+                    <li>Detail C</li>
+                    <li>Detail D</li>
+                    <li>Detail E</li>
+                    <li>Detail F</li>
+                </ul>
+            </div>
         </div>
         <div style="border: 1px solid black; padding: 10px 20px; width: 20%; background-color: #f9f9f9; text-align: center;">
             <h3 style="margin-bottom: 0; color: black; font-size: 16px; text-align: center;">Stat 7</h3>
             <hr style="border: 1px solid black; margin-top: 5px; margin-bottom: 10px;">
-            <p style="font-size: 30px; color: black; text-align: center;">700</p>
+            <div style="max-height: 150px; overflow-y: auto; text-align: left;">
+                <ul style="padding-left: 15px;">
+                    <li>Info 1</li>
+                    <li>Info 2</li>
+                    <li>Info 3</li>
+                    <li>Info 4</li>
+                    <li>Info 5</li>
+                    <li>Info 6</li>
+                </ul>
+            </div>
         </div>
-       </div>
+    </div>
 
     </div>
     """,
