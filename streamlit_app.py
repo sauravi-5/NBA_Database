@@ -38,7 +38,7 @@ st.markdown(
 
     <!-- Add another row of stats with a vertical list -->
     <div style="display: flex; justify-content: space-around; margin-top: 20px;">
-        <div style="border: 1px solid black; padding: 10px 20px; width: 20%; background-color: #f9f9f9; text-align: center;">
+        <div style="border: 1px solid black; padding: 10px 20px; width: 30%; background-color: #f9f9f9; text-align: center;">
             <h3 style="margin-bottom: 0; color: black; font-size: 16px; text-align: center;">Stat 5</h3>
             <hr style="border: 1px solid black; margin-top: 5px; margin-bottom: 10px;">
             <div style="max-height: 150px; overflow-y: auto; text-align: left;">
@@ -52,7 +52,7 @@ st.markdown(
                 </ul>
             </div>
         </div>
-        <div style="border: 1px solid black; padding: 10px 20px; width: 20%; background-color: #f9f9f9; text-align: center;">
+        <div style="border: 1px solid black; padding: 10px 20px; width: 30%; background-color: #f9f9f9; text-align: center;">
             <h3 style="margin-bottom: 0; color: black; font-size: 16px; text-align: center;">Stat 6</h3>
             <hr style="border: 1px solid black; margin-top: 5px; margin-bottom: 10px;">
             <div style="max-height: 150px; overflow-y: auto; text-align: left;">
@@ -66,7 +66,7 @@ st.markdown(
                 </ul>
             </div>
         </div>
-        <div style="border: 1px solid black; padding: 10px 20px; width: 20%; background-color: #f9f9f9; text-align: center;">
+        <div style="border: 1px solid black; padding: 10px 20px; width: 30%; background-color: #f9f9f9; text-align: center;">
             <h3 style="margin-bottom: 0; color: black; font-size: 16px; text-align: center;">Stat 7</h3>
             <hr style="border: 1px solid black; margin-top: 5px; margin-bottom: 10px;">
             <div style="max-height: 150px; overflow-y: auto; text-align: left;">
