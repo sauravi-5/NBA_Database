@@ -50,8 +50,6 @@ st.markdown(
         
     <!-- Single scrollable feature -->
     <div style="border: 1px solid black; padding: 10px 20px; width: 90%; margin: 20px auto; background-color: #f9f9f9; text-align: center;">
-         <h3 style="margin-bottom: 0; color: black; font-size: 16px; text-align: center;">Stat 5</h3>
-         <hr style="border: 1px solid black; margin-top: 5px; margin-bottom: 10px;">
          <div style="max-height: 150px; overflow-y: auto; text-align: left;">
             <ul style="padding-left: 15px;">
                 <li style="color: black;">Detail 1</li>
