@@ -8,64 +8,72 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-# Add Player and Game Statistics with a white boundary and boxes
+import streamlit as st
+
+# Simulated data for player and game statistics
+statistics = {
+    "Stat 1": 100,
+    "Stat 2": 200,
+    "Stat 3": 300,
+    "Stat 4": 400
+}
+
+# Simulated data for dropdown options and scrollable details
+table_options = ["Table 1", "Table 2", "Table 3"]
+scrollable_details = {
+    "Table 1": ["Detail 1", "Detail 2", "Detail 3"],
+    "Table 2": ["Detail A", "Detail B", "Detail C"],
+    "Table 3": ["Detail X", "Detail Y", "Detail Z"]
+}
+
+# Display section header
 st.markdown(
     """
     <div style="border: 2px solid white; padding: 20px; text-align: center; font-size: 20px;">
         <h2>Player and Game Statistics</h2>
-        <div style="display: flex; justify-content: space-around; margin-top: 20px;">
-            <div style="border: 1px solid black; padding: 10px 20px; width: 20%; background-color: #f9f9f9; text-align: center;">
-                <h3 style="margin-bottom: 0; color: black; font-size: 16px; text-align: center;">Stat 1</h3>
-                <hr style="border: 1px solid black; margin-top: 5px; margin-bottom: 10px;">
-                <p style="font-size: 30px; color: black; text-align: center;">100</p>
-            </div>
-            <div style="border: 1px solid black; padding: 10px 20px; width: 20%; background-color: #f9f9f9; text-align: center;">
-                <h3 style="margin-bottom: 0; color: black; font-size: 16px; text-align: center;">Stat 2</h3>
-                <hr style="border: 1px solid black; margin-top: 5px; margin-bottom: 10px;">
-                <p style="font-size: 30px; color: black; text-align: center;">200</p>
-            </div>
-            <div style="border: 1px solid black; padding: 10px 20px; width: 20%; background-color: #f9f9f9; text-align: center;">
-                <h3 style="margin-bottom: 0; color: black; font-size: 16px; text-align: center;">Stat 3</h3>
-                <hr style="border: 1px solid black; margin-top: 5px; margin-bottom: 10px;">
-                <p style="font-size: 30px; color: black; text-align: center;">300</p>
-            </div>
-            <div style="border: 1px solid black; padding: 10px 20px; width: 20%; background-color: #f9f9f9; text-align: center;">
-                <h3 style="margin-bottom: 0; color: black; font-size: 16px; text-align: center;">Stat 4</h3>
-                <hr style="border: 1px solid black; margin-top: 5px; margin-bottom: 10px;">
-                <p style="font-size: 30px; color: black; text-align: center;">400</p>
-            </div>
-        </div>
-
-    <!-- Add filter above a single scrollable feature -->
-    <div style="margin-top: 20px;">
-        <h3 style="text-align: center; color: black;">Select Table</h3>
-        <div style="text-align: center;">
-            <select style="padding: 10px; width: 50%; font-size: 16px; margin: auto;">
-                <option value="table1">Table 1</option>
-                <option value="table2">Table 2</option>
-                <option value="table3">Table 3</option>
-             </select>
-         </div>
-     </div>
-        
-    <!-- Single scrollable feature -->
-    <div style="border: 1px solid black; padding: 10px 20px; width: 90%; margin: 20px auto; background-color: #f9f9f9; text-align: center;">
-         <div style="max-height: 150px; overflow-y: auto; text-align: left;">
-            <ul style="padding-left: 15px;">
-                <li style="color: black;">Detail 1</li>
-                <li style="color: black;">Detail 2</li>
-                <li style="color: black;">Detail 3</li>
-                <li style="color: black;">Detail 4</li>
-                 <li style="color: black;">Detail 5</li>
-                <li style="color: black;">Detail 6</li>
-            </ul>
-        </div>
-    </div>
     </div>
     """,
     unsafe_allow_html=True,
 )
 
+# Display statistics dynamically
+st.markdown(
+    """
+    <div style="display: flex; justify-content: space-around; margin-top: 20px;">
+    """,
+    unsafe_allow_html=True,
+)
+
+for stat_name, stat_value in statistics.items():
+    st.markdown(
+        f"""
+        <div style="border: 1px solid black; padding: 10px 20px; width: 20%; background-color: #f9f9f9; text-align: center;">
+            <h3 style="margin-bottom: 0; color: black; font-size: 16px; text-align: center;">{stat_name}</h3>
+            <hr style="border: 1px solid black; margin-top: 5px; margin-bottom: 10px;">
+            <p style="font-size: 30px; color: black; text-align: center;">{stat_value}</p>
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
+
+st.markdown("</div>", unsafe_allow_html=True)
+
+# Dropdown filter for selecting a table
+selected_table = st.selectbox("Select Table", options=table_options)
+
+# Display scrollable feature dynamically based on selected table
+st.markdown(
+    """
+    <div style="border: 1px solid black; padding: 10px 20px; width: 90%; margin: 20px auto; background-color: #f9f9f9; text-align: center;">
+        <div style="max-height: 150px; overflow-y: auto; text-align: left;">
+    """,
+    unsafe_allow_html=True,
+)
+
+for detail in scrollable_details[selected_table]:
+    st.markdown(f"<p style='color: black;'>{detail}</p>", unsafe_allow_html=True)
+
+st.markdown("</div></div>", unsafe_allow_html=True)
 # Display the "Filter Data" heading
 st.markdown(
     """
