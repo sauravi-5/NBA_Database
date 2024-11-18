@@ -43,12 +43,12 @@ st.markdown(
             <hr style="border: 1px solid black; margin-top: 5px; margin-bottom: 10px;">
             <div style="max-height: 150px; overflow-y: auto; text-align: left;">
                 <ul style="padding-left: 15px;">
-                    <li>Detail 1</li>
-                    <li>Detail 2</li>
-                    <li>Detail 3</li>
-                    <li>Detail 4</li>
-                    <li>Detail 5</li>
-                    <li>Detail 6</li>
+                    <li style="color: black;">Detail 1</li>
+                    <li style="color: black;">Detail 2</li>
+                    <li style="color: black;">Detail 3</li>
+                    <li style="color: black;">Detail 4</li>
+                    <li style="color: black;">Detail 5</li>
+                    <li style="color: black;">Detail 6</li>
                 </ul>
             </div>
         </div>
@@ -57,12 +57,12 @@ st.markdown(
             <hr style="border: 1px solid black; margin-top: 5px; margin-bottom: 10px;">
             <div style="max-height: 150px; overflow-y: auto; text-align: left;">
                 <ul style="padding-left: 15px;">
-                    <li>Detail A</li>
-                    <li>Detail B</li>
-                    <li>Detail C</li>
-                    <li>Detail D</li>
-                    <li>Detail E</li>
-                    <li>Detail F</li>
+                    <li style="color: black;">Detail A</li>
+                    <li style="color: black;">Detail B</li>
+                    <li style="color: black;">Detail C</li>
+                    <li style="color: black;">Detail D</li>
+                    <li style="color: black;">Detail E</li>
+                    <li style="color: black;">Detail F</li>
                 </ul>
             </div>
         </div>
@@ -71,12 +71,12 @@ st.markdown(
             <hr style="border: 1px solid black; margin-top: 5px; margin-bottom: 10px;">
             <div style="max-height: 150px; overflow-y: auto; text-align: left;">
                 <ul style="padding-left: 15px;">
-                    <li>Info 1</li>
-                    <li>Info 2</li>
-                    <li>Info 3</li>
-                    <li>Info 4</li>
-                    <li>Info 5</li>
-                    <li>Info 6</li>
+                    <li style="color: black;">Info 1</li>
+                    <li style="color: black;">Info 2</li>
+                    <li style="color: black;">Info 3</li>
+                    <li style="color: black;">Info 4</li>
+                    <li style="color: black;">Info 5</li>
+                    <li style="color: black;">Info 6</li>
                 </ul>
             </div>
         </div>
