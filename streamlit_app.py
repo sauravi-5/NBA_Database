@@ -64,7 +64,7 @@ st.markdown(
     <div style="max-height: 150px; overflow-y: auto; text-align: left;">
         {"".join([f"<p style='color: black;'>{detail}</p>" for detail in scrollable_details[selected_table]])}
     </div>
-</div>
+    </div>
     """,
     unsafe_allow_html=True,
 )
