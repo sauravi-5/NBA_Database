@@ -36,17 +36,17 @@ st.markdown(
             </div>
         </div>
 
-        <!-- Add filter above a single scrollable feature -->
-        <div style="margin-top: 20px;">
-            <h3 style="text-align: center; color: black;">Select Table</h3>
-            <div style="text-align: center;">
-                <select style="padding: 10px; width: 50%; font-size: 16px; margin: auto;">
-                    <option value="table1">Table 1</option>
-                    <option value="table2">Table 2</option>
-                    <option value="table3">Table 3</option>
-                </select>
-            </div>
-        </div>
+    <!-- Add filter above a single scrollable feature -->
+    <div style="margin-top: 20px;">
+        <h3 style="text-align: center; color: black;">Select Table</h3>
+        <div style="text-align: center;">
+            <select style="padding: 10px; width: 50%; font-size: 16px; margin: auto;">
+                <option value="table1">Table 1</option>
+                <option value="table2">Table 2</option>
+                <option value="table3">Table 3</option>
+             </select>
+         </div>
+     </div>
         
         <!-- Single scrollable feature -->
         <div style="border: 1px solid black; padding: 10px 20px; width: 90%; margin: 20px auto; background-color: #f9f9f9; text-align: center;">
