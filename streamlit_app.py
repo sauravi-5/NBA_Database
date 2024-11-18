@@ -35,53 +35,40 @@ st.markdown(
                 <p style="font-size: 30px; color: black; text-align: center;">400</p>
             </div>
         </div>
-
-    <!-- Add another row of stats with a vertical list -->
-    <div style="display: flex; justify-content: space-around; margin-top: 20px;">
-        <div style="border: 1px solid black; padding: 10px 20px; width: 30%; background-color: #f9f9f9; text-align: center;">
-            <h3 style="margin-bottom: 0; color: black; font-size: 16px; text-align: center;">Stat 5</h3>
-            <hr style="border: 1px solid black; margin-top: 5px; margin-bottom: 10px;">
-            <div style="max-height: 150px; overflow-y: auto; text-align: left;">
-                <ul style="padding-left: 15px;">
-                    <li style="color: black;">Detail 1</li>
-                    <li style="color: black;">Detail 2</li>
-                    <li style="color: black;">Detail 3</li>
-                    <li style="color: black;">Detail 4</li>
-                    <li style="color: black;">Detail 5</li>
-                    <li style="color: black;">Detail 6</li>
-                </ul>
-            </div>
-        </div>
-        <div style="border: 1px solid black; padding: 10px 20px; width: 30%; background-color: #f9f9f9; text-align: center;">
-            <h3 style="margin-bottom: 0; color: black; font-size: 16px; text-align: center;">Stat 6</h3>
-            <hr style="border: 1px solid black; margin-top: 5px; margin-bottom: 10px;">
-            <div style="max-height: 150px; overflow-y: auto; text-align: left;">
-                <ul style="padding-left: 15px;">
-                    <li style="color: black;">Detail A</li>
-                    <li style="color: black;">Detail B</li>
-                    <li style="color: black;">Detail C</li>
-                    <li style="color: black;">Detail D</li>
-                    <li style="color: black;">Detail E</li>
-                    <li style="color: black;">Detail F</li>
-                </ul>
-            </div>
-        </div>
-        <div style="border: 1px solid black; padding: 10px 20px; width: 30%; background-color: #f9f9f9; text-align: center;">
-            <h3 style="margin-bottom: 0; color: black; font-size: 16px; text-align: center;">Stat 7</h3>
-            <hr style="border: 1px solid black; margin-top: 5px; margin-bottom: 10px;">
-            <div style="max-height: 150px; overflow-y: auto; text-align: left;">
-                <ul style="padding-left: 15px;">
-                    <li style="color: black;">Info 1</li>
-                    <li style="color: black;">Info 2</li>
-                    <li style="color: black;">Info 3</li>
-                    <li style="color: black;">Info 4</li>
-                    <li style="color: black;">Info 5</li>
-                    <li style="color: black;">Info 6</li>
-                </ul>
-            </div>
-        </div>
     </div>
+    """,
+    unsafe_allow_html=True,
+)
 
+# Filter to select the table
+st.markdown(
+    """
+    <div style="margin-top: 30px; text-align: center;">
+        <h3>Select Table</h3>
+    </div>
+    """,
+    unsafe_allow_html=True,
+)
+
+# Dropdown to select a table
+table_options = ["Players", "Teams", "Matches", "Venues", "Coaches"]
+selected_table = st.selectbox("Choose a table to view", ["Select One"] + table_options, index=0)
+
+# Display the scrollable table content
+st.markdown(
+    """
+    <div style="margin-top: 20px; text-align: center;">
+        <h3>Table Content</h3>
+    </div>
+    """,
+    unsafe_allow_html=True,
+)
+
+# Scrollable section to display table data
+st.markdown(
+    """
+    <div style="border: 1px solid grey; padding: 10px; width: 100%; height: 200px; overflow-y: auto; background-color: #f9f9f9;">
+        <p style="color: black; text-align: center;">Table content for the selected table will appear here.</p>
     </div>
     """,
     unsafe_allow_html=True,
